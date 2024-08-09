@@ -14,14 +14,27 @@
     opacity: 1;
 }
 /*** Spinner End ***/
-
+.whatsapp{
+    position: fixed;
+    right: 0em;
+    bottom: 10em;
+    z-index: 20;
+  }
+  .btn-contact{
+    background:#238f50 ;
+    color: white;
+  }
+  .btn-contact:hover{
+    background:#238f43c0 ;
+    color: white;
+  }
 .back-to-top {
     position: fixed;
-    right: 30px;
+    right: 10px;
     bottom: 30px;
     display: flex;
-    width: 45px;
-    height: 45px;
+    width: 15px;
+    height: 15px;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
