@@ -16,16 +16,21 @@
 /*** Spinner End ***/
 .whatsapp{
     position: fixed;
-    right: 0em;
-    bottom: 10em;
-    z-index: 20;
+    right: 14px;
+    bottom: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+    border-radius: 2em;
   }
   .btn-contact{
-    background:#238f50 ;
+    background:#075e54 ;
     color: white;
   }
   .btn-contact:hover{
-    background:#238f43c0 ;
+    background:rgb(35, 143, 67);
     color: white;
   }
 .back-to-top {
