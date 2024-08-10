@@ -50,7 +50,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #7a8a9e;
-    background-color: #fff;
+    background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
@@ -4482,7 +4482,11 @@ fieldset:disabled .btn {
 }
 
 .navbar {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.5s ease, padding 0.5s ease;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
