@@ -3408,14 +3408,19 @@ fieldset:disabled .btn {
 }
 
 .btn-light {
-    color: #000;
-    background-color: #f0f5fb;
+    color: #170e69;
+    background-color: #f5f5f5ee;
     border-color: #f0f5fb
 }
 
 .btn-light:hover {
-    color: #000;
-    background-color: #f2f7fc;
+    color: #ffffff;
+    background-color: #554a94cb;
+    border-color: #f2f6fb
+}
+.current-nav{
+    color: #ffffff;
+    background-color: #554a94cb;
     border-color: #f2f6fb
 }
 
