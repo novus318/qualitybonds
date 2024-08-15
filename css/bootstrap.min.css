@@ -3419,9 +3419,10 @@ fieldset:disabled .btn {
     border-color: #f2f6fb
 }
 .current-nav{
-    color: #ffffff;
-    background-color: #554a94cb;
-    border-color: #f2f6fb
+    border-color: #554a94cb;
+    padding: 4px;
+    border-radius: 2px;
+    border-bottom: solid 1px;
 }
 
 .btn-check:focus+.btn-light,

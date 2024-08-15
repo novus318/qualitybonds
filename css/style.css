@@ -1,4 +1,115 @@
 
+.static-background {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 40% opacity */
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 70%;
+    padding: 20px;
+    animation: moveContent 10s infinite alternate;
+}
+
+@keyframes moveContent {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        position: relative;
+        z-index: 2;
+        max-width: 70%;
+        padding: 20px;
+        animation: moveContent 10s infinite alternate;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+        padding: 20px;
+        animation: moveContent 10s infinite alternate;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
